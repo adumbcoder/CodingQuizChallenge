@@ -61,7 +61,7 @@ answers.forEach(answer => {
             incrementScore(increaseScore);
         } else {
             let timeLeft = timeLeftEl.textContent.split(':');
-            let totalSecondsLeft = (timeLeft[0] * 60 + parseInt(timeLeft[1]))- 10;
+            let totalSecondsLeft = (timeLeft[0] * 60 + parseInt(timeLeft[1]))- 60;
             startTimer(totalSecondsLeft);
         }
 
