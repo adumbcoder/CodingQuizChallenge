@@ -1,6 +1,7 @@
 body {
   font-family: Arial;
   font-size: 120%;
+  background-color: blueviolet;
 }
 
 a {
@@ -30,10 +31,6 @@ button:hover {
   background-color: #8570a5;
 }
 
-.choices button {
-  display: block;
-}
-
 input[type="text"] {
   font-size: 100%;
 }
@@ -58,12 +55,9 @@ li:nth-child(odd) {
   max-width: 600px;
 }
 
-.hide {
-  display: none;
-}
-
 .start {
   text-align: center;
+  display: block;
 }
 
 .scores {
@@ -86,3 +80,42 @@ li:nth-child(odd) {
   top: 10px;
   right: 10px;
 }
+/* My styles */
+/* if answers are correct */
+.correct {
+  background-color:green;
+  width: 95%;
+}
+/* if answers are wrong */
+.incorrect {
+  background-color: red;
+  width: 95%;
+}
+/* main container */
+#game {
+  width: 60%;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 5%;
+  box-shadow: 5px 10px 25px black;
+  background-color: gray;
+  border-radius: 10px;
+  color: white;
+}
+/* little bit of room */
+#answers {
+  margin-bottom: 10px;
+  margin-top:5;
+  margin-left: 10px;
+}
+/* border and a little room */
+#currentQuestion {
+  text-align: center;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid black;
+  
+}
+
+/*  */

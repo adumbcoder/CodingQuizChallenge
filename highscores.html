@@ -12,12 +12,17 @@
   <body>
     <div class="wrapper">
       <h1>Highscores</h1>
-      <ol id="highscores"></ol>
+      <label for='initials'>Please enter your initials(up to four characters).</label>
+      <input id='initials' type="text" name="initials">
 
-      <a href="index.html"><button>Go Back</button></a>
+      <ol id="highScores"></ol>
+      
+      <a href="index.html"><button id="goBack">Go Back</button></a>
+      <button id="submit" type="button">Submit</button>
       <button id="clear">Clear Highscores</button>
     </div>
-
-    <script src="./assets/js/scores.js"></script>
+    
+    
+    <script src="./assets/javascript/highScoreslogic.js" ></script>
   </body>
 </html>

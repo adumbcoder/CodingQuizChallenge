@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Welcome to the Game!</title>
+
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css' integrity='sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm' crossorigin='anonymous'>
+    <link rel='stylesheet' href='assets/css/styles.css'>
+    
+
+</head>
+<body>
+    <!-- This page is where the quiz will live. Most of the logic will happen here. -->
+    <div id='container' class="col-md-12 container">
+        <div id="game">
+            <div id="view col-md-12 my-auto">
+                <div class="view-components row mx-auto">
+                    <div id="question" class='col-md-4'>
+                        Questions
+                    </div>
+                    <p id="timer" class="col-md-4">
+                        15:00
+                    </p>
+                    <div id="score" class="col-md-4">
+                        Score:<span id="scoreText">0</span>
+                    </div>
+                </div>
+                
+            </div>
+            <div id="currentQuestion">
+
+            </div>
+            <div id="answersContainer col-md-12">
+                <div id="answers" class='row'>
+                    <p class="answerA col-md-1">A)</p>
+                    <p class="answerText col-md-9" data-number="1">Answer1</p>
+                </div>
+                <div id="answers" class="row">
+                    <p class="answerB col-md-1">B)</p>
+                    <p class="answerText col-md-9" data-number="2">Answer2</p>
+                </div>
+                <div id="answers" class="row">
+                    <p class="answerC col-md-1">C)</p>
+                    <p class="answerText col-md-9" data-number="3">Answer3</p>
+                </div>
+                <div id="answers" class="row">
+                    <p class="answerD col-md-1">D)</p>
+                    <p class="answerText col-md-9" data-number="4">Answer4</p>
+                </div>
+            </div>  
+        </div>
+
+    </div>
+
+    <script src="./assets/javascript/questions.js"></script>
+    <script src="./assets/javascript/logic.js"></script>
+
+</body>
+</html>
